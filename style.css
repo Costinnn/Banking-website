@@ -141,8 +141,7 @@ main{
     padding-right: 50px;
     padding-top: 100px;
     margin-top: -100px;
-    padding-bottom: 100px;
-    margin-bottom : -100px;
+    border-bottom-left-radius: 80px;
 }
 
 .section-two > div:first-child{
@@ -164,9 +163,6 @@ main{
     padding-right: 15px;
     margin: 15px;
     margin-left: 65px;
-}
-.section-two p{
-    color: white;
 }
 
 #s2-text{
@@ -197,6 +193,7 @@ main{
 }
 
 .s2-slide-text{
+    color: white;
     font-size: 40px;
     margin-left: 200px;
     margin-bottom: 30px;
@@ -204,7 +201,7 @@ main{
 
 .app-type{
     font-size: 35px;
-    color: #2B3C3E !important;
+    color: #2B3C3E;
     font-weight: 600;
     position: absolute;
     left: 200px;
@@ -223,6 +220,7 @@ main{
 .download-icons div{
     text-align: center;
     width: 150px;
+    color: white;
 }
 .right-arrow,
 .left-arrow{
@@ -247,8 +245,81 @@ main{
     align-items: center;
     justify-content: space-between;
     position: relative;
+    padding-bottom: 50px;
 }
 
+.content2{
+    background-color:#C7F1EF;
+    text-align: center;
+    padding: 25px 60px;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+
+.content2 h4{
+    font-size: 45px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.c2-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.c2-box > div{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitle{
+    width: 180px;
+    color: #F44635;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.subtitle + p{
+    width: 220px;
+    font-size: 14px;
+}
+
+.content3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 60px;
+    padding-bottom: 50px;
+}
+
+.c3-box{
+    display: flex;
+    gap: 145px;
+}
+
+.red-bg > div{
+    background-color: #F44635 !important;
+}
+
+.c3-box > div{
+    background-color: #C7F1EF;
+    width: 165px;
+    height: 165px;
+    border-radius: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 3px 3px 8px rgba(78, 78, 78, 0.9);
+}
+
+/* Footer styles */
 
 /* Style for screen width more that 1440px  */
 
@@ -271,5 +342,9 @@ main{
 
     .frame{
         width: 100vw;
+    }
+
+    .c3-box{
+        gap: 10vw;
     }
 }
