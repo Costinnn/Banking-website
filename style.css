@@ -62,6 +62,13 @@ main{
     background-color: #27383C;
 }
 
+.button-bright:hover,
+.button-dark:hover{
+    cursor: pointer;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
 #nav-menu{
     margin-left: 40%;
 }
@@ -131,6 +138,12 @@ main{
     margin-top: 30px;
     margin-left: -30px;
     box-shadow: 0 1px 4px rgba(78, 78, 78,0.4);
+}
+
+#button-join:hover,
+#button-learn:hover{
+    cursor: pointer;
+    padding-left: 220px;
 }
 
 /* Section 2 styles */
@@ -222,6 +235,12 @@ main{
     width: 150px;
     color: white;
 }
+
+.download-icons div:hover{
+    color:#F44635;
+    cursor: pointer;
+}
+
 .right-arrow,
 .left-arrow{
     position: absolute;
@@ -238,6 +257,11 @@ main{
 
 .left-arrow{
     left: 5%;
+}
+
+.right-arrow:hover,
+.left-arrow:hover{
+    cursor: pointer;
 }
 
 .content1{
@@ -289,37 +313,100 @@ main{
 }
 
 .content3{
+    width: 1440px;
+    height: 460px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 60px;
     margin-top: 60px;
     padding-bottom: 50px;
 }
 
 .c3-box{
     display: flex;
-    gap: 145px;
+    align-items: center;
 }
 
 .red-bg > div{
     background-color: #F44635 !important;
 }
 
-.c3-box > div{
+.icon{
     background-color: #C7F1EF;
     width: 165px;
     height: 165px;
     border-radius: 90px;
+    margin: 20px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     box-shadow: inset 3px 3px 8px rgba(78, 78, 78, 0.9);
 }
+.icons-text p:first-child{
+    font-weight: 600;
+}
+
+.icons-text{
+    display: none;
+    color: #27383C;
+}
+
+.icon:hover{
+    
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: flex-start;
+}
+
 
 /* Footer styles */
+
+#footer{
+    width: 1440px;
+    height: 300px;
+    padding: 20px 20px;
+    background: linear-gradient(to right, white,#CAF4F0);
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-content p{
+    color: #F44635;
+    line-height: 40px;
+}
+.footer-content p:hover{
+    color: #2B3C3E;
+    cursor: pointer;
+}
+
+.footer-content h5{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.footer-content:nth-child(2){
+    text-align: center;
+}
+
+.socials > div{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.socials img{
+    width: 30px;
+    margin-left: 10px;
+}
+
 
 /* Style for screen width more that 1440px  */
 
@@ -344,7 +431,11 @@ main{
         width: 100vw;
     }
 
-    .c3-box{
-        gap: 10vw;
+    .content3{
+        width: 100vw;
+    }
+
+    #footer{
+        width: 100vw;
     }
 }
