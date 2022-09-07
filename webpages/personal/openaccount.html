@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Finci Bank</title>
     <link rel="stylesheet" href="/global-styles/globalstyle.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/webpages/openaccountstyle.css" />
+    <link rel="stylesheet" href="style.css">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -19,8 +20,10 @@
   <body>
     <header id="navigation">
       <div id="nav-logo">
-        <img src="/images/Group 1.png" alt="logo" />
-        <p>FINCI</p>
+        <a href="/index.html">
+          <img src="/images/Group 1.png" alt="logo" />
+          <p>FINCI</p>
+        </a>
       </div>
       <div id="nav-buttons">
         <button class="button-bright" type="button">LOG IN</button>
@@ -36,8 +39,8 @@
       <section class="section1">
         <h2>Your new FINCI account is just a few minutes away</h2>
         <div class="info-type">
-          <h3> <a href=""> FINCI PERSONAL</a></h3>
-          <h3><a href="">FINCI BUSINESS</a></h3>
+          <h3>FINCI PERSONAL</h3>
+          <h3><a href="/webpages/business/openaccount.html">FINCI BUSINESS</a></h3>
         </div>
         <div class="form-container">
           <div>
@@ -151,12 +154,17 @@
             <form>
               <div>
                 <label for="account-type">Account type</label>
-                <input type="text" name="" id="account-type" />
+                <input type="text" name="" list="account-type" id="account-type" />
+                <datalist id="account-type">
+                  <option value="Checking account"></option>
+                  <option value="Credit account"></option>
+                  <option value="Deposit account"></option>
+                </datalist>
                 <label for="currency">Currency</label>
                 <input type="text" list="currency-list" name="" id="currency" />
                 <datalist id="currency-list">
-                  <option value="$">Dollar $</option>
-                  <option value="€">Euro €</option>
+                  <option value="Dollar $">Dollar $</option>
+                  <option value="Euro €">Euro €</option>
                 </datalist>
               </div>
               <div>

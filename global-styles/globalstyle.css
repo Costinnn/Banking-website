@@ -7,9 +7,9 @@
 }
 
 a:link,
-a:visited{
+a:visited {
   text-decoration: none;
-  color:#2b3c3e;
+  color: #2b3c3e;
 }
 
 body {
@@ -61,7 +61,9 @@ main {
   color: #27383c;
   background-color: #caf4f0;
 }
-
+.button-dark a {
+  color: #caf4f0;
+}
 .button-dark {
   color: #caf4f0;
   background-color: #27383c;
@@ -131,10 +133,9 @@ main {
 }
 
 @media (max-width: 1440px) {
-  
-  main{
+  main {
     width: 100vw;
- }
+  }
   #navigation {
     width: 100vw;
   }
@@ -143,9 +144,8 @@ main {
   }
 }
 
-@media (max-width: 1100px){
+@media (max-width: 1100px) {
   #nav-menu {
     margin-left: 32%;
   }
 }
-
