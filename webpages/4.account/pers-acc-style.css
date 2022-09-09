@@ -1,0 +1,114 @@
+.section1{
+    display: flex;
+    width: 1440px;
+    position: relative;
+}
+
+.customer-info{
+    background-color: #2B3C3E;
+    padding: 20px 150px 20px 150px;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.473);
+    z-index: -1;
+    width: 55%;
+}
+
+#profile-photo{
+    width: 132px;
+    height: 132px;
+    border-radius: 100px;
+    border: 5px solid white;
+    overflow: hidden;
+}
+
+#profile-photo img{
+    height: 132px;
+}
+
+#customer-img-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#name-adress{
+    text-align: right;
+}
+
+.full-name{
+    color: #C6ECE8;
+}
+
+#adress{
+    color: #7A9897;
+}
+
+h2, h4{
+    color: #7A9897; 
+    
+}
+
+#account-information span{
+    color: #C6ECE8;
+    float: right;
+    text-transform: uppercase;
+}
+
+#card{
+    width: 100%;
+    background-color: #cbf4f085;
+    border-radius: 30px;
+    padding: 20px 30px;
+}
+
+#card > h3{
+    color: #27383C;
+}
+
+#card h5{
+    color: #CCF4F0;
+}
+
+#card-no-exp,
+#card-cvv-img,
+#card-cvv-img > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#card-cvv-img > div{
+    background-color: #87A7A6;
+    width: 70%;
+    padding: 10px 20px 10px 30px;
+    margin-left: -30px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#expiration-date{
+    text-align: right;
+}
+
+#card .full-name,
+#card-number,
+#expiration-date,
+#cvv-number{
+    color: #2B3C3E;
+}
+
+.account-info{
+    background: linear-gradient(to right, #7A9897,#324443a9);
+    margin-left: -70px;
+    padding-left: 120px;
+    z-index: -2;
+    width: 55%;
+}
+
+@media (max-width: 1440px){
+    .section1{
+        width: 100vw;
+    }
+}

@@ -178,46 +178,6 @@
   padding-bottom: 50px;
 }
 
-.content2 {
-  background-color: #c7f1ef;
-  text-align: center;
-  padding: 25px 60px;
-  border-top-left-radius: 80px;
-  border-bottom-right-radius: 80px;
-}
-
-.content2 h4 {
-  font-size: 45px;
-  padding-top: 40px;
-  padding-bottom: 20px;
-}
-
-.c2-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.c2-box > div {
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.subtitle {
-  width: 180px;
-  color: #f44635;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.subtitle + p {
-  width: 220px;
-  font-size: 14px;
-}
-
 .content3 {
   width: 1440px;
   height: 460px;

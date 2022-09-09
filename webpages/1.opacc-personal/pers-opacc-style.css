@@ -1,0 +1,15 @@
+.form-container {
+  background-color: #c8f3ef5d;
+}
+
+.info-type h3:first-child {
+  background-color: #c8f3ef;
+}
+
+.join-button{
+  background-color: #f44535b0;
+}
+
+.join-button span {
+  color: white;
+}
