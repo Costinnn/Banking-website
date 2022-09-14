@@ -1,3 +1,5 @@
+const username = document.querySelector("#username");
+const password = document.querySelector("#password");
 const title = document.querySelector("#title");
 const fullName = document.querySelector("#name");
 const birthDate = document.querySelector("#birth-date");
@@ -17,12 +19,11 @@ const internetBanking = document.querySelector("#yes");
 const other = document.querySelector("#other");
 
 const joinBtn = document.querySelector(".join-button");
-let customerID = 0;
-
-const customersList = [];
 
 class customer {
   constructor(
+    username,
+    password,
     title,
     fullName,
     birthDate,
@@ -39,9 +40,8 @@ class customer {
     internetBanking,
     other
   ) {
-    this.Id = customerID;
-    customerID++;
-    this.accountHistory = [];
+    this.username = username;
+    this.password = password;
     this.title = title;
     this.fullName = fullName;
     this.birthDate = birthDate;
@@ -58,12 +58,13 @@ class customer {
     this.internetBanking = internetBanking;
     this.other = other;
     this.balance = 0;
+    this.accountHistory = [];
   }
 
   deposit(amount) {
     if (amount > 0) {
       this.balance += amount;
-      this.accountHistory.push(`Deposited ${amount}$.`)
+      this.accountHistory.push(`Deposited ${amount}$.`);
       return `You just deposited ${amount}$ into your account. Your new balance is: ${this.balance}$.`;
     }
   }
@@ -71,7 +72,7 @@ class customer {
   withdraw(amount) {
     if (this.balance >= amount) {
       this.balance -= amount;
-      this.accountHistory.push(`withdrew ${amount}$.`)
+      this.accountHistory.push(`withdrew ${amount}$.`);
       return `You just withdraw ${amount}$.`;
     } else {
       return `You have insuficient funds, your account balance is: ${this.balance}$.`;
@@ -94,6 +95,8 @@ joinBtn.addEventListener("click", () => {
   }
 
   let newCustomer = new customer(
+    username.value,
+    password.value,
     title.value,
     fullName.value,
     birthDate.value,
@@ -111,5 +114,7 @@ joinBtn.addEventListener("click", () => {
     other.value
   );
 
-  customersList.push(newCustomer);
+  localStorage.setItem(`${username.value}`, JSON.stringify(newCustomer));
+
+  window.location.href = "../4.account/pers-account.html";
 });

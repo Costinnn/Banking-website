@@ -1,17 +1,25 @@
-.form-container {
-    background-color:#f445356c;
-  }
+#account-login-info {
+  display: flex;
+}
 
-    .info-type h3:last-child{
-      background-color: #F44635;
-      border-radius: 30px;
-      padding: 5px 10px;
-  }
-  
-  .join-button{
-    background-color: #C8F3EF;
-  }
-  
-  .join-button span {
-    color:#F44635;
-  }
+#account-login-info > div {
+  flex-grow: 1;
+}
+
+.form-container {
+  background-color: #f445356c;
+}
+
+.info-type h3:last-child {
+  background-color: #f44635;
+  border-radius: 30px;
+  padding: 5px 10px;
+}
+
+.join-button {
+  background-color: #c8f3ef;
+}
+
+.join-button span {
+  color: #f44635;
+}

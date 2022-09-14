@@ -26,10 +26,10 @@
       </div>
       <div id="nav-buttons">
         <button class="button-bright" type="button">
-          <a href="/webpages/login/login.html">LOG IN</a>
+          <a href="../3.login/login.html">LOG IN</a>
         </button>
         <button class="button-dark" type="button">
-          <a href="/webpages/personal/openaccount.html">OPEN ACCOUNT</a>
+          <a href="../1.opacc-personal/pers-openaccount.html">OPEN ACCOUNT</a>
         </button>
       </div>
       <div id="nav-menu">
@@ -43,61 +43,84 @@
         <div class="customer-info">
           <div id="customer-img-name">
             <div id="profile-photo">
-              <img src="../../images/profile.jpg" alt="">
+              <img src="../../images/profile.jpg" alt="" />
             </div>
             <div id="name-adress">
-              <h3 class="full-name"><span  id="title">xx</span>xx xx</h3>
+              <h3 class="full-name"><span id="title">xx</span>xx xx</h3>
               <p id="adress">xxxxxxxxx</p>
             </div>
-          </div id='account-box'>
-            <h2>CARD INFORMATION</h2>
-            <div id="card">
-              <h3>FINCI PERSONAL</h3>
-              <h5>CARDHOLDER NAME</h5>
-              <p class="full-name">xxxxxxxxxxx</p>
-              <div id="card-no-exp">
-                <div>
-                  <h5>CARD NUMBER</h5>
-                  <p id="card-number">213 123 1421 1245</p>
-                </div>
-                <div>
-                  <h5>EXPIRATION DATE</h5>
-                  <p id="expiration-date">4313</p>
-                </div>
+          </div>
+          <h2>CARD INFORMATION</h2>
+          <div id="card">
+            <h3>FINCI PERSONAL</h3>
+            <h5>CARDHOLDER NAME</h5>
+            <p class="full-name">xxxxxxxxxxx</p>
+            <div id="card-no-exp">
+              <div>
+                <h5>CARD NUMBER</h5>
+                <p id="card-number">213 123 1421 1245</p>
               </div>
-              <div id="card-cvv-img">
-                <div>
-                  <h5>CVV NUMBER</h5>
-                  <p id="cvv-number">345</p>
-                </div>
-                <img src="../../images/visa.png" alt="">
+              <div>
+                <h5>EXPIRATION DATE</h5>
+                <p id="expiration-date">4313</p>
               </div>
             </div>
-            <h2 >ACCOUNT INFORMATION</h2>
-            <div id="account-information">
-              <h4>Account type <span id="account-type">xxxxxxx</span></h4>
-              <h4>Currency <span id="currency">xxxx</span></h4>
-              <h4>Card type <span id="card-type">xxxx</span></h4>
-              <h4>Internet banking <span id="internet-banking">xxx</span></h4>
+            <div id="card-cvv-img">
+              <div>
+                <h5>CVV NUMBER</h5>
+                <p id="cvv-number">345</p>
+              </div>
+              <img src="../../images/visa.png" alt="" />
             </div>
-            <button type="button"><a href="">EDIT ACCOUNT INFORMATION</a></button>
-            <div>
-              <button type="button">GET A CREDIT</button>
-              <button type="button">CLOSE ACCOUNT</button>
-            </div>
-        </div>
-        <div class="account-info">
-          <h2>TOTAL BALANCE <span></span><span></span></h2>
+          </div>
+          <h2>ACCOUNT INFORMATION</h2>
+          <div id="account-information">
+            <h4>Account type <span id="account-type">xxxxxxx</span></h4>
+            <h4>Currency <span id="currency">xxxx</span></h4>
+            <h4>Card type <span id="card-type">xxxx</span></h4>
+            <h4>Internet banking <span id="internet-banking">xxx</span></h4>
+          </div>
+          <button type="button" id="edit-acc-btn">
+            <a href="">EDIT ACCOUNT INFORMATION</a>
+          </button>
           <div>
-            <button type="button">DEPOSIT MONEY</button>
-            <button type="button">WITHDRAW MONEY</button>
+            <button type="button" id="get-credit-btn">GET A CREDIT</button>
+            <button type="button" id="close-acc-btn">CLOSE ACCOUNT</button>
+          </div>
+        </div>
+        <!-- Section2 -->
+        <div class="account-info">
+          <div>
+            <h2>TOTAL BALANCE</h2>
+            <div class="account-info-balance">
+              <p class="acc-info-currency">$</p>
+              <p id="acc-info-balance">123</p>
+            </div>
+          </div>
+
+          <div class="functions-buttons">
+            <button type="button" id="deposit-btn">DEPOSIT MONEY</button>
+            <button type="button" id="withdraw-btn">xxxxxxxxxxxxxxxx</button>
           </div>
           <h2>TRANSACTIONS</h2>
-          <div>
-
+          <div class="daily-transactions">
+            <h4>today</h4>
+            <div class="daily-transactions-box">
+              <div class="transaction">
+                <p class="description">Gas</p>
+                <div>
+                  <p class="acc-info-currency">$</p>
+                  <p class="amount">-123</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <button type="button">SEE ALL OF YOUR TRANSACTIONS</button>
-          <button type="button">SET A BUDGET</button>
+          <div class="info-buttons">
+            <button type="button" id="transactions-btn">
+              SEE ALL OF YOUR TRANSACTIONS
+            </button>
+            <button type="button" id="budget-btn">SET A BUDGET</button>
+          </div>
         </div>
       </section>
     </main>
@@ -139,6 +162,6 @@
       </section>
     </footer>
     <script src="/global-styles/globalscript.js"></script>
-    <script src="pers-acc-script.js"></script>
+    <script type="module" defer src="pers-acc-script.js"></script>
   </body>
 </html>

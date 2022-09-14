@@ -1,3 +1,11 @@
+#account-login-info{
+  display: flex;
+}
+
+#account-login-info > div{
+  flex-grow: 1;
+}
+
 .form-container {
   background-color: #c8f3ef5d;
 }
